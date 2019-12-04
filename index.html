@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="tic-tac-toe.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="tictactoe"></div>
+      <div id="player" align="center">
+        <span id="turn" align="">Player X</span>
+      </div>
+    </div>
+    <div id="mode">
+      <img src="images/1st.jpg" class="turn turn1" id="turn1">
+      <input type="checkbox" id="playerTurn" class="turn turn-checkbox">
+      <img src="images/flip.png" class="turn arrow-turn">
+      <img src="images/2nd.jpg" class="turn turn2" id="turn2">
+      <img src="images/1vs1.png" class="mode shine">
+      <input type="checkbox" id="playerMode">
+      <img src="images/flip.png" id="modeTurn" class="arrow">
+      <img src="images/1vscomp.png" class="mode">
+      <form id="matrix">
+        
+        <input type="radio" name="radio-button" id="mat3" class="radio"><label><img src="images/matrix.png" class="matrix-1"></label>
+        <input type="radio" name="radio-button" id="mat4" class="radio"><label><img src="images/matrix.png" class="matrix-2"></label>
+        <input type="radio" name="radio-button" id="mat6" class="radio"><label><img src="images/matrix.png" class="matrix-3"></label>
+      </form>
+    </div>
+    <div><img src="images/hovering-ghost.gif" class="ghost"></div>
+    <div><img src="images/hovering-ghost.gif" class="hovering-ghost"></div>
+    <div><img src="images/hovering-ghost.gif" class="flying-ghost"></div>
+    <script type="text/javascript" src="tic-tac-toe.js"></script>
+  </body>
+</html>
